@@ -226,6 +226,10 @@ ul li:hover:nth-child(5) a:after{
 }
 
 @media (max-width: 480px){
+  #demo-canvas {
+    opacity: 0.5;
+  }
+
   .box {
     font-size: 1.2em;
   }
