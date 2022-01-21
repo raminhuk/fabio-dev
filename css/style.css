@@ -37,6 +37,7 @@ body {
   font-size: 2em;
   opacity: 0.95;
   font-family: monospace;
+  transition: .4s;
 }
 
 .box span{
@@ -77,7 +78,7 @@ ul li a {
   box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
   align-items: center;
   padding: 10px;
-  opacity: 0.9;
+  opacity: 0.98;
   width: 145px;
   justify-content: center;
 }
@@ -165,4 +166,91 @@ ul li:hover:nth-child(5) a:before{
 }
 ul li:hover:nth-child(5) a:after{
   background: #32a0fa;
+}
+
+@media (max-width: 980px){
+
+  ul li {
+      margin: 0;
+      font-size: 0.7em;
+      position: relative;
+  }
+
+  ul li a {
+    padding: 8px;
+    width: 125px;
+  }
+
+}
+
+@media (max-width: 720px){
+
+  .box {
+    font-size: 1.5em;
+  }
+
+  ul li {
+    margin: 0 20px;
+  }
+
+  ul li a span {
+      display: none;
+  }
+
+  ul li a .fa {
+    padding-right: 0;
+  }
+
+  ul li a{
+    transform: rotate( -10deg) skew(10deg) translate(0,0);
+    width: 30px;
+  }
+
+  ul li a:hover{
+    transform: rotate( -10deg) skew(10deg) translate(0,0);
+    box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
+  }
+
+  ul li a:before {
+    top: 8px;
+    left: -15px;
+    width: 15px;
+  }
+
+  ul li a:after {
+    bottom: -15px;
+    left: -8px;
+    height: 15px;
+  }
+
+}
+
+@media (max-width: 480px){
+  .box {
+    font-size: 1.2em;
+  }
+
+  ul li {
+    margin: 0 11px;
+  }
+
+  ul li a .fa {
+    font-size: 1.5em;
+  }
+
+  ul li a {
+    padding: 6px;
+    width: 25px;
+  }
+  ul li a:before {
+    top: 5px;
+    left: -10px;
+    width: 10px;
+  }
+  ul li a:after {
+    bottom: -10px;
+    left: -6px;
+    height: 10px;
+  }
+
 }
